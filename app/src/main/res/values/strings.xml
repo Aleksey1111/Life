@@ -1,3 +1,5 @@
 <resources>
-    <string name="app_name">Life</string>
+    <string name="app_name">Reminder</string>
+    <string name="setTitle" >Reminder </string>
+    <string name="title">title</string>
 </resources>
