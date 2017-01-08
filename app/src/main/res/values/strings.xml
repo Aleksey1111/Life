@@ -2,4 +2,5 @@
     <string name="app_name">Reminder</string>
     <string name="setTitle" >Reminder </string>
     <string name="title">title</string>
+    <string name="menu_nav">Напоминания</string>
 </resources>
