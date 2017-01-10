@@ -3,4 +3,6 @@
     <string name="setTitle" >Reminder </string>
     <string name="title">title</string>
     <string name="menu_nav">Напоминания</string>
+    <string name="open">open</string>
+    <string name="close">close</string>
 </resources>
