@@ -5,7 +5,7 @@
     android:id="@+id/drawer"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorWig"
+    android:background="@android:color/white"
 
     tools:context="com.example.olya.life.MainActivity">
 
@@ -24,7 +24,9 @@
             android:layout_height="?attr/actionBarSize"
             android:layout_width="match_parent"
             android:id="@+id/toolbar"
+
             android:background="@color/colorPrimary"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
             >
 
         </android.support.v7.widget.Toolbar>
@@ -33,10 +35,11 @@
             android:id="@+id/tabLayout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:tabIndicatorColor="@android:color/background_dark"
+            app:tabIndicatorColor="@color/colorAccent"
             app:tabIndicatorHeight="6dp"
-            app:tabSelectedTextColor="@android:color/background_dark"
-            app:tabTextColor="@android:color/background_dark"
+            app:tabSelectedTextColor="@color/colorAccent"
+            app:tabTextColor="@color/colorAccent"
+            app:tabBackground="@color/colorR"
 
             >
 
