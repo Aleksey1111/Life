@@ -20,7 +20,7 @@ public class Birthdays extends Fragment {
     private View view;
     public Context context;
     public static Birthdays getInstance(Context context) {
-
+g
         Bundle args = new Bundle();
         Birthdays fragment = new Birthdays();
         fragment.setContext(context);
