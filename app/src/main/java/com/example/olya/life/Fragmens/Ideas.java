@@ -11,22 +11,20 @@ import android.view.ViewGroup;
 import com.example.olya.life.R;
 
 /**
- * Created by Olya on 09.01.2017.
+ * Created by Olya on 13.01.2017.
  */
 
-public class ExampleFragment extends Fragment {
+public class Ideas extends Fragment {
     private static final int LAYOUT = R.layout.fragment;
     public static String title;
-
+    private View view;
     private Context context;
-   private View view;
-    public static ExampleFragment getInstance(Context context) {
+    public static Ideas getInstance(Context context) {
         Bundle args = new Bundle();
-        ExampleFragment fragment = new ExampleFragment();
+        Ideas fragment = new Ideas();
         fragment.setContext(context);
-        fragment.setTitle(context.getString(R.string.history));
+        fragment.setTitle(context.getString(R.string.ideas));
         fragment.setArguments(args);
-
         return fragment;
 
 
@@ -40,11 +38,11 @@ public class ExampleFragment extends Fragment {
 
     }
 
-    public static void setTitle(String title) {
-        ExampleFragment.title = title;
-    }
-
     public void setContext(Context context) {
         this.context = context;
+    }
+
+    public static void setTitle(String title) {
+        Ideas.title = title;
     }
 }

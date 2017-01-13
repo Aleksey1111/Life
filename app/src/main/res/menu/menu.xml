@@ -6,7 +6,7 @@
 
     <item
         android:icon="@mipmap/ic_account_search"
-
+        android:fillColor="#0670f2"
 
         app:showAsAction="always"
         android:id="@id/search"

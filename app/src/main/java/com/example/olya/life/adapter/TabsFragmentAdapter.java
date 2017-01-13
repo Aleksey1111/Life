@@ -1,39 +1,42 @@
 package com.example.olya.life.adapter;
 
+import android.content.Context;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 
+import com.example.olya.life.Fragmens.Birthdays;
 import com.example.olya.life.Fragmens.ExampleFragment;
+import com.example.olya.life.Fragmens.Ideas;
+import com.example.olya.life.Fragmens.Todo;
+
+import java.util.Map;
 
 /**
  * Created by Olya on 09.01.2017.
  */
 
 public  class TabsFragmentAdapter extends FragmentPagerAdapter {
-    String [] tabs;
-    public TabsFragmentAdapter(FragmentManager fm) {
+    private Map <Integer, Fragment> tabs;
+    private Context context;
+    public TabsFragmentAdapter(Context context, FragmentManager fm) {
         super(fm);
-        tabs= new String[]{"1","Напоминания","2"};
+        this.context = context;
+        tabs.put(0,ExampleFragment.getInstance(context));
+        tabs.put(1,Todo.getInstance(context));
+        tabs.put(2, Ideas.getInstance(context));
+        tabs.put(3, Birthdays.getInstance(context));
+
     }
 
     @Override
     public CharSequence getPageTitle(int position) {
-        return tabs[position];
+        return tabs.get(position);
     }
 
     @Override
     public Fragment getItem(int position) {
-        switch (position) {
-            case 0:
-                return ExampleFragment.getInstance();
-            case 1:
-               return ExampleFragment.getInstance();
-
-            case 2:
-                return ExampleFragment.getInstance();
-            default:
-                break;
+       return tabs.get()
 
 
         }
